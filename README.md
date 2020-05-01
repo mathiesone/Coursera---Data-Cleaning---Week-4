@@ -19,3 +19,5 @@ The R script called run_analysis.R does the following:
 
 Please note:  The comments within the R script should help understand which areas are being accomplished at each stage.
 
+When running this R Script, the script will re-download the data to the working directory (this is currently hard coded, and will require updating to your own wd - see line 6).
+The script will create a folder "data" for this download, then open the zip to your main working directory and continue all actions from here.
