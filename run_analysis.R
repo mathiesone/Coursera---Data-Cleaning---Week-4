@@ -96,3 +96,4 @@ names(data_mean_sd) <- gsub("Mag", "Magnitude", names(data_mean_sd))
 data_summary <- aggregate(. ~ Subject + Activity, data = data_mean_sd, mean)
 data_summary <- data_summary[order(data_summary$Subject, data_summary$Activity),]
 
+write.table(data_summary, "tidydata.txt", row.names = FALSE)
